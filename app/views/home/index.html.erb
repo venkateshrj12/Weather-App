@@ -1,0 +1,10 @@
+<div class="text-center">
+    <h1 class="display-5"> <%= @data["main"]["temp"] %> °C</h1>
+    <p> <%= @data["name"] %> <br/>
+    <%# Date time formats available in https://apidock.com/ruby/DateTime/strftime %>
+    <%= Date.today.strftime("%d/%m/%Y") %></p>
+    <br/>
+    <input type="search" placeholder="Longitude" aria-label="Search">
+    <input type="search" placeholder="Latitude" aria-label="Search"><br/><br/>
+    <a class="btn btn-secondary btn-lg" href="#" role="button">Search</a>
+</div>
